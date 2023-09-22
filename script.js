@@ -40,7 +40,7 @@ function getSet() {
 }
 
 function generateCharacters(pl, par, set) {
-  //generates as set of characters for the password which will include all of the types that are required
+  //generates as set of characters for the password which will include all of the types that are required. The index of par and set variables should match the parameter (true/false) and the character set (lower,upper,number,symbol)
   var chars = "";
   var result = "";
   for (var i = 0; i < par.length; i++) {
@@ -57,16 +57,16 @@ function generateCharacters(pl, par, set) {
   return result
 }
 
-function shuffle(string) {
+function shuffle(s) {
   // Shuffle result using Fisher-Yates shuffle to ensure special symbols are not at the beginning and return the finished password.
   // https://stackoverflow.com/questions/3943772/how-do-i-shuffle-the-characters-in-a-string-in-javascript
-  for(var i = 0; i < string.length; i++){
-      var j = Math.floor(Math.random()*string.length)
-      var k = string[j] 
-      string[j] = string[i]
-      string[i] = k
+  for(var i = 0; i < s.length; i++){
+      var j = Math.floor(Math.random()*s.length)
+      var k = s[j] 
+      s[j] = s[i]
+      s[i] = k
   }
-  return string
+  return s
 }
 
 function generatePassword() {
