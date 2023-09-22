@@ -88,6 +88,14 @@ header {
   cursor: pointer;
 }
 
+#genSimple {
+  background-color: hsl(129, 91%, 36%);
+}
+
+#genComplex {
+  background-color: hsl(0, 0%, 0%);
+}
+
 button[disabled] {
   cursor: default;
   background: #c0c7cf;

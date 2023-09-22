@@ -40,6 +40,6 @@ The algorithm used prompts the user for length, and then choices of which charac
 
 Then it will add one character from each category, then finishes the password by adding random characters to the required length. After this, the password is shuffled so that the required characters are not at the beginning of the password to increase randomness and security. 
 
-I used StackOverflow extensively to learn how to generate a random string, as well as shuffling the string. 
+I used StackOverflow extensively to learn how to generate a random string, as well as shuffling the string. For shuffling, I am using the [Fisher-Yates Shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) algorithm to ensure a truly random password. 
 
-For shuffling, I am using the [Fisher-Yates Shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) algorithm to ensure a truly random password. 
+After completing the project I was asked by the instructor to refactor the code so that it comprises a series of functions. To demonstrate why you would do this, I have added additional buttons to the page to show how this works - I am able to feed specific parameters to the functions and generate a password. The simple password uses the simplified character list and is 8 characters long, while the complex password is 128 characters and uses the full gamut of charaters available for passwords. 
