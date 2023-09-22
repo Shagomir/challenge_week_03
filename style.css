@@ -87,7 +87,7 @@ header {
   text-align: center;
   cursor: pointer;
 }
-
+/* adding some color to the extra buttons */
 #genSimple {
   background-color: hsl(129, 91%, 36%);
 }
