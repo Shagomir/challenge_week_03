@@ -122,10 +122,10 @@ function shuffle(s) {
   // Shuffle result using Fisher-Yates shuffle to ensure special symbols are not at the beginning and return the finished password.
   // https://stackoverflow.com/questions/3943772/how-do-i-shuffle-the-characters-in-a-string-in-javascript
   var a = s.split("");
-
+var j, k
   for (var i = 0; i < a.length; i++) {
-    var j = Math.floor(Math.random() * s.length);
-    var k = a[i];
+    j = Math.floor(Math.random() * a.length);
+    k = a[i];
     a[i] = a[j];
     a[j] = k;
   }
